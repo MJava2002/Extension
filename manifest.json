@@ -1,0 +1,35 @@
+{
+  "name": "ColorShop",
+  "version": "0.1.0",
+  "description": "Here's all of your colors",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["*://*/*"], 
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/save.png",
+        "assets/delete.png"
+      ],
+      "matches": ["<all_urls>"] 
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "assets/ext-icon.png",
+      "24": "assets/ext-icon.png",
+      "32": "assets/ext-icon.png"
+    },
+    "default_title": "ColorShop",
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 3
+}
