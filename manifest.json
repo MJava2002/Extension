@@ -1,7 +1,7 @@
 {
-  "name": "ColorShop",
+  "name": "Color Shop",
   "version": "0.1.0",
-  "description": "Here's all of your colors",
+  "description": "All your colors",
   "permissions": ["storage", "tabs"],
   "host_permissions": ["*://*/*"], 
   "background": {
